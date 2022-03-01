@@ -2,6 +2,11 @@ package com.qaactitime.pages;
 
 import com.qaactitime.base.DriverScript;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class EnterTimePage extends DriverScript {
 	// *********************************************** Page Elements ************************************************************* //
 	
@@ -13,6 +18,7 @@ public class EnterTimePage extends DriverScript {
 		
 		public EnterTimePage()
 		{
+			WebDriver driver = null;
 			PageFactory.initElements(driver, this);
 		}
 		
